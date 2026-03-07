@@ -27,8 +27,8 @@ export const createCheckoutSession = async (req, res) => {
           quantity: 1,
         },
       ],
-success_url: "https://salon-booking-app.vercel.app/success?session_id={CHECKOUT_SESSION_ID}",
-cancel_url: "https://salon-booking-app.vercel.app/cancel"
+success_url: "https://salon-booking-app-plum.vercel.app/success?session_id={CHECKOUT_SESSION_ID}",
+cancel_url: "https://salon-booking-app-plum.vercel.app/cancel"
     });
 
     // 4. Send the URL back to the frontend
