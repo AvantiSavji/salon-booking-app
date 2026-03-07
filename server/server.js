@@ -34,6 +34,10 @@ app.use("/api/auth", authRoutes);
 app.use("/api/bookings", bookingRoutes);
 app.use("/api/payments", paymentRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Glam Studio API is running ✨");
+});
+
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
