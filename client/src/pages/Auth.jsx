@@ -31,8 +31,8 @@ function Auth() {
 
     try {
       const url = isLogin
-        ? "http://localhost:5000/api/auth/login"
-        : "http://localhost:5000/api/auth/register";
+        ? "https://glamstudio-ezax.onrender.com/api/auth/login"
+        : "https://glamstudio-ezax.onrender.com/api/auth/register";
 
       const response = await axios.post(url, formData);
 

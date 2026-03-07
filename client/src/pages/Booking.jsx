@@ -41,7 +41,7 @@ function Booking() {
   const fetchBookedSlots = async (date) => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get(`http://localhost:5000/api/bookings/slots/${date}`, {
+      const res = await axios.get(`https://glamstudio-ezax.onrender.com/api/bookings/slots/${date}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setBookedSlots(res.data);
@@ -84,7 +84,7 @@ const handlePayment = async () => {
       // 2. Save the booking to MongoDB FIRST
       // This ensures you have a record even if they close the browser
       const bookingResponse = await axios.post(
-        "http://localhost:5000/api/bookings",
+        "https://glamstudio-ezax.onrender.com/api/bookings",
         bookingData,
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -93,7 +93,7 @@ const handlePayment = async () => {
 
       // 3. Get the Stripe URL
       const paymentResponse = await axios.post(
-        "http://localhost:5000/api/payments/create-checkout-session",
+"https://glamstudio-ezax.onrender.com/api/payments/create-checkout-session",
         { amount: totalPrice },
         { headers: { Authorization: `Bearer ${token}` } }
       );

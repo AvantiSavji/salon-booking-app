@@ -58,7 +58,7 @@ function Admin() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/bookings/${bookingId}/status`,
+        `        "https://glamstudio-ezax.onrender.com/api/bookings/${bookingId}/status`,
         { status: newStatus },
         {
           headers: { Authorization: `Bearer ${token}` }

@@ -15,7 +15,7 @@ function MyBookings() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/bookings/my",
+        "https://glamstudio-ezax.onrender.com/api/bookings/my",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ function MyBookings() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/bookings/${bookingId}/cancel`,
+        `https://glamstudio-ezax.onrender.com/api/bookings/${bookingId}/status`,
         {},
         {
           headers: {
