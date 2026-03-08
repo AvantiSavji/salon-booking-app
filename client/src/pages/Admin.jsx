@@ -18,7 +18,7 @@ function Admin() {
   const fetchBookings = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/bookings",
+      "https://glamstudio-ezax.onrender.com/api/bookings",        
         {
           headers: { Authorization: `Bearer ${token}` }
         }
@@ -35,7 +35,7 @@ function Admin() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/bookings/stats",
+        "https://glamstudio-ezax.onrender.com/api/bookings/stats",
         {
           headers: { Authorization: `Bearer ${token}` }
         }
@@ -58,7 +58,7 @@ function Admin() {
     try {
 
       await axios.put(
-        `        "https://glamstudio-ezax.onrender.com/api/bookings/${bookingId}/status`,
+        `https://glamstudio-ezax.onrender.com/api/bookings/${bookingId}/status`,
         { status: newStatus },
         {
           headers: { Authorization: `Bearer ${token}` }
