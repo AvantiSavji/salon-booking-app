@@ -214,27 +214,39 @@ Returns all booking data.
 
 salon-booking-app
 
-client
-├── src
-│   ├── components
-│   ├── pages
-│   │   ├── Home.jsx
-│   │   ├── Services.jsx
-│   │   ├── Login.jsx
-│   │   ├── Register.jsx
-│   │   ├── Testimonials.jsx
-│   │   └── Success.jsx
-│   ├── App.jsx
-│   └── main.jsx
+client/   → React Frontend
+server/   → Node + Express Backend
 
-server
-├── routes
-├── controllers
-├── models
-├── stripe.js
-└── server.js
 
-README.md
+```text
+salon-booking-app
+│
+├── client
+│   ├── public
+│   └── src
+│       ├── components
+│       ├── pages
+│       │   ├── Home.jsx
+│       │   ├── Services.jsx
+│       │   ├── Login.jsx
+│       │   ├── Register.jsx
+│       │   ├── Testimonials.jsx
+│       │   └── Success.jsx
+│       │
+│       ├── App.jsx
+│       └── main.jsx
+│
+├── server
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── stripe.js
+│   └── server.js
+│
+├── package.json
+└── README.md
+```
+
 
 ---
 
